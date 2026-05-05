@@ -100,7 +100,25 @@
 
 .form {
     display: grid;
-    gap: 1.8rem;
+    gap: 1.5rem;
+}
+
+.formRow {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+/* Three columns for Country/State/City on desktop */
+.formRow:has(.formGroup:nth-child(3)) {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media (max-width: 600px) {
+    .formRow {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
 }
 
 .formGroup {

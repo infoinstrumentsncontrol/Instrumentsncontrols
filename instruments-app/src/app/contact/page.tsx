@@ -38,19 +38,42 @@ export default function ContactPage() {
 
                         <div className={`${styles.formBox} glass`}>
                             <form className={styles.form}>
-                                <div className={styles.formGroup}>
-                                    <label>Full Name</label>
-                                    <input type="text" placeholder="John Doe" />
+                                <div className={styles.formRow}>
+                                    <div className={styles.formGroup}>
+                                        <label>Full Name</label>
+                                        <input type="text" placeholder="John Doe" required />
+                                    </div>
+                                    <div className={styles.formGroup}>
+                                        <label>Business Email</label>
+                                        <input type="email" placeholder="john@company.com" required />
+                                    </div>
                                 </div>
+
                                 <div className={styles.formGroup}>
-                                    <label>Business Email</label>
-                                    <input type="email" placeholder="john@company.com" />
+                                    <label>Phone Number</label>
+                                    <input type="tel" placeholder="+91 00000 00000" required />
                                 </div>
+
+                                <div className={styles.formRow}>
+                                    <div className={styles.formGroup}>
+                                        <label>Country</label>
+                                        <input type="text" placeholder="India" required />
+                                    </div>
+                                    <div className={styles.formGroup}>
+                                        <label>State</label>
+                                        <input type="text" placeholder="Gujarat" required />
+                                    </div>
+                                    <div className={styles.formGroup}>
+                                        <label>City</label>
+                                        <input type="text" placeholder="Vadodara" required />
+                                    </div>
+                                </div>
+
                                 <div className={styles.formGroup}>
                                     <label>Message</label>
-                                    <textarea rows={5} placeholder="Inquiry details..."></textarea>
+                                    <textarea rows={4} placeholder="How can we help you? Please specify product requirements..."></textarea>
                                 </div>
-                                <button type="submit" className="btn btn-primary" style={{ width: '100%' }}>Send Inquiry</button>
+                                <button type="submit" className="btn btn-primary" style={{ width: '100%' }}>Send Enquiry</button>
                             </form>
                         </div>
                     </div>
