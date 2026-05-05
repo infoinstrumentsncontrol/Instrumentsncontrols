@@ -73,7 +73,7 @@ export default function ContactPage() {
                                     <label>Message</label>
                                     <textarea rows={4} placeholder="How can we help you? Please specify product requirements..."></textarea>
                                 </div>
-                                <button type="submit" className="btn btn-primary" style={{ width: '100%' }}>Send Enquiry</button>
+                                <button type="submit" className={styles.submitBtn}>Send Enquiry</button>
                             </form>
                         </div>
                     </div>

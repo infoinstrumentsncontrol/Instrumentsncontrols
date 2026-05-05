@@ -173,7 +173,7 @@
     gap: 0.5rem;
     background: rgba(0, 122, 255, 0.88);
     color: #fff;
-    padding: 0.9rem 2.2rem;
+    padding: 0.8rem 2.5rem;
     border-radius: 50px;
     font-weight: 600;
     font-size: 0.95rem;
@@ -184,7 +184,9 @@
     cursor: pointer;
     transition: all 0.35s var(--ease-apple);
     letter-spacing: -0.01em;
-    width: 100%;
+    width: fit-content;
+    justify-self: center;
+    margin-top: 1rem;
 }
 
 .submitBtn:hover {
